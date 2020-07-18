@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+  <!-- var declarations are globally scoped or function/locally scoped. -->
+  <!-- var variables can be re-declared and updated. -->
+      var a;
+    function f(){
+      a = 'hello';
+      var b = 12;
+      document.write(a);
+      document.write(b);
+    }
+    f();
+
+<!-- let can be updated but not re-declared. -->
+<!--  let is block scoped.variable declared in a block with let  is only available for use within that block. -->
+let greeting = "say Hi";
+   if (true) {
+       let greeting = "say Hello instead";
+       console.log(greeting); // "say Hello instead"
+   }
+   console.log(greeting);
+<!-- Variables declared with the const maintain constant values. -->
+<!-- const declarations are block scoped.const cannot be updated or re-declared -->
+const g = {
+        message: "say Hi",
+        times: 4
+    }
+    g.message = "say hi intead";
+</script>
+  </body>
+</html>

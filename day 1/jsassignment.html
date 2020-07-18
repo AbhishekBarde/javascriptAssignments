@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+  <!-- console.log() - Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.  -->
+    console.log('abc');
+  <!-- console.error() - Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color. -->
+    console.error('this is simple error');
+  <!-- Used to log warning message to the console. By default the warning message will be highlighted with yellow color. -->
+    console.warn('this is warning')
+  <!-- Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned. -->
+    console.clear();
+  <!-- Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console). -->
+    console.time('abc');
+      let fun=function(){
+          console.log('abcdefg');
+      }
+      let fun1=function(){
+        console.warn('this is last warning');
+      }
+      fun();
+      fun();
+     console.timeEnd('abc');
+
+    <!-- This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table. -->
+      console.table({"a":1,"b":2});
+
+    <!-- This method is used to count the number that the function hit by this counting method. -->
+        for(let i=0;i<5;i++){
+          console.count(i);
+        }
+    <!-- group() and groupEnd() methods of the console object allows us to group contents in a separate block, which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value. -->
+        console.group('efg');
+          console.log('hey');
+          console.warn('only use upper case');
+        console.groupEnd('efg');
+
+    <!-- -->
+    // Custom Console log example
+    // Custom Console log example
+    const spacing = '10px';
+    const styles =
+		`padding: ${spacing}; background-color: white; color: green; font-style:
+		italic; border: 1px solid black; font-size: 2em;`;
+    console.log('%cJavaScript', styles);
+
+
+</script>
+  </body>
+</html>
