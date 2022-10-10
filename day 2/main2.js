@@ -1,4 +1,4 @@
-let age = prompt("what is your age?", 21);
+let age = prompt("what is your age?", 20);
 
 if(age < 20) {
 	console.log("you cannot drink");
