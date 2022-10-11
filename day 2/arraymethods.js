@@ -14,7 +14,6 @@ console.log(c);
 let result = a.reduce((sum,current) => sum+current);
 console.log(result);//returns 44
 
-//sorting
 a.sort();
 console.log(a);
 
