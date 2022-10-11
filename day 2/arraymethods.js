@@ -1,4 +1,4 @@
-var a = [1,2,3,9,5,6,4,7,8];
+var a = [1,2,3,9,5,6,4,7];
 
 //splice(index[],delete count)
 a.splice(0,1);//from index 0 remove 1 element
