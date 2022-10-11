@@ -1,4 +1,4 @@
-//string methods are same as array methods such as concat, indexOf, latIndexOf, search, slice, split, length,
+
 b= 'lion is the king of animals';
 c= 'tiger';
 //charAt(index)
